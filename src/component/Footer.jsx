@@ -11,9 +11,9 @@ function Footer({navItem}) {
                 <div className='md:w-3/4 lg:w-[45%] pr-8 space-y-12' >
                     <div className='flex items-center gap-6 '>
                         <img src={logo} alt="logo" className='w-16 h-16' />
-                        <h1 className=' text-4xl font-black '>SILVER</h1>
+                        <h1 className=' text-4xl font-black '>Desert Stars</h1>
                     </div>
-                    <p className='lg:w-4/5'>Create Music studio website using ReactJS and TailwindCSS
+                    <p className='lg:w-4/5'>Desert Stars Children Choir  
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                     <div className='flex'>
@@ -24,7 +24,7 @@ function Footer({navItem}) {
                 </div>
                 {/* Platform */}
                 <div className='md:w-1/4 lg:w-[15%]' >
-                    <h4 className='text-xl font-bold mt-5'>Platform</h4>
+                    <h4 className='text-xl font-bold mt-5'>Website</h4>
                     <nav className='space-y-3 mt-8 list-none'>
                         {navItem.map(({link,path},index) => {
                             return <li key={link + index} ><Link className='hover:text-Thirdary duration-300 cursor-pointer' offset={-100} to={path}>{link}</Link></li>
@@ -45,16 +45,16 @@ function Footer({navItem}) {
                 <div className='md:w-1/2 lg:w-[20%]' >
                     <h4 className='text-xl font-bold mt-5'>Contact</h4>
                     <div className='space-y-3 mt-8'>
-                        <p>(+66)885432123</p>
-                        <p>Silver studio 888</p>
-                        <p>Bangkok,Thailand Asia Pacific</p>
-                        <p>10123</p>
+                        <p>(+971)885432123</p>
+                        <p>Desert Stars</p>
+                        <p>Dubai, UAE</p>
+                        <p>00000</p>
                     </div>
                 </div>
             </div>
             <hr className='mt-10' />
             <div className='text-white flex justify-between items-center mt-10 mb-5'>
-                <p className='font-light text-gray-300'>© Silver Studio 2024.</p>
+                <p className='font-light text-gray-300'>© Desert Stars 2026.</p>
                 <nav className='flex gap-4 text-4xl'>
                     <a href="https://www.facebook.com/" target='_blank'><FaSquareFacebook/></a>
                     <a href="https://www.instagram.com/" target='_blank'><FaSquareInstagram/></a>

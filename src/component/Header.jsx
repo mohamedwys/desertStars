@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import logo from '../assets/images/logo.png'
-import { GrLanguage,GrMenu,GrClose } from "react-icons/gr";
+import { GrMenu,GrClose } from "react-icons/gr";
 import { Link } from 'react-scroll';
 function Header({ navItem }) {
     const [openMenu,setOpenMenu] = useState(false);
@@ -16,7 +16,7 @@ function Header({ navItem }) {
                 <div className='flex gap-4 lg:gap-8 items-center'>
                     <a href='/' id="logo" className='flex items-center gap-4' >
                         <img src={logo} alt="logo" className='w-12 h-12' />
-                        <h1 className=' text-4xl font-black '>SILVER</h1>
+                        <h1 className=' text-3xl font-black '>DESERT STARS</h1>
                     </a>
                     <nav>
                         <ul className='md:flex hidden gap-4 lg:gap-8 font-medium'>
@@ -25,13 +25,6 @@ function Header({ navItem }) {
                             })}              
                         </ul>
                     </nav>
-                </div>
-                <div className='hidden md:flex gap-4'>
-                    <div className='hidden lg:flex gap-2 items-center'>
-                        <GrLanguage />
-                        Language
-                    </div>
-                    <a href="/sign-up"><button className='font-bold text-base bg-secondary hover:bg-primary py-2 px-4 duration-500 rounded-md text-white'>LOGIN</button></a>
                 </div>
 
             {/* mobile menu */}

@@ -14,7 +14,7 @@ function Home() {
                 initial={"hidden"}
                 whileInView={"show"}
                 viewport={{once:false,amount:0.7}}
-                className="text-3xl md:text-5xl lg:text-6xl font-black">Listen to New Music</motion.h1>
+                className="text-3xl md:text-5xl lg:text-6xl font-black">Listen to Our Choir</motion.h1>
                 <motion.p
                 variants={fadeIn("up",0.5)}
                 initial={"hidden"}
@@ -27,8 +27,7 @@ function Home() {
                 whileInView={"show"}
                 viewport={{once:false,amount:0.7}}
                 className="text-xs flex gap-4">
-                    <button className="p-4 bg-Thirdary rounded-md font-bold hover:bg-primary duration-500">DOWLOAD NOW</button>
-                    <button className="p-4 bg-Thirdary rounded-md font-bold hover:bg-primary duration-500">FREE TRIAL</button>
+                    {/* <button className="p-4 bg-Thirdary rounded-md font-bold hover:bg-primary duration-500">DOWLOAD NOW</button> */}
                 </motion.div>
             </div>
         </div>

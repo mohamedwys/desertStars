@@ -14,7 +14,7 @@ function Feature() {
                 initial={"hidden"}
                 whileInView={"show"}
                 viewport={{once:false}}
-                className="text-3xl md:text-5xl font-black text-secondary">Why we are better than other</motion.h2>
+                className="text-3xl md:text-5xl font-black text-secondary">Children Choir Desert Stars</motion.h2>
                 <motion.p
                 variants={fadeIn("right",0.5)}
                 initial={"hidden"}
@@ -31,15 +31,15 @@ function Feature() {
             className='lg:w-2/3 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>
                 <div className='px-6 min-h-96 flex flex-col justify-center items-center w-full text-center rounded-xl space-y-10 text-secondary shadow-[0px_10px_50px_0px_rgba(0,0,0,0.15)] hover:-translate-y-4 duration-500 cursor-pointer'>
                     <img className='w-full' src={feature1} alt="feature1" />
-                    <h2 className="text-3xl font-black">Vocal & mixing tools</h2>
+                    <h2 className="text-3xl font-black">Desert Stars service 1</h2>
                 </div>
                 <div className='px-6 min-h-96 flex flex-col justify-center items-center w-full text-center rounded-xl space-y-10 text-secondary shadow-[0px_10px_50px_0px_rgba(0,0,0,0.15)] lg:translate-y-16 hover:-translate-y-4 lg:hover:translate-y-12 duration-500 cursor-pointer'>
                     <img className='w-full p-4' src={feature2} alt="feature2" />
-                    <h2 className="text-3xl font-black">Virtual instruments</h2>
+                    <h2 className="text-3xl font-black">Desert Stars service 2</h2>
                 </div>
                 <div className='px-6 min-h-96 flex flex-col justify-center items-center w-full text-center rounded-xl space-y-10 text-secondary shadow-[0px_10px_50px_0px_rgba(0,0,0,0.15)] hover:-translate-y-4 duration-500 cursor-pointer'>
                     <img className='w-full' src={feature3} alt="feature3" />
-                    <h2 className="text-3xl font-black">Royalty-free sounds</h2>
+                    <h2 className="text-3xl font-black">Desert Stars service 3</h2>
                 </div>
             </motion.div>
         </div>

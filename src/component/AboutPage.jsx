@@ -21,7 +21,7 @@ function AboutPage() {
         whileInView={"show"}
         viewport={{once:false}}
         className='w-full lg:w-1/3 space-y-7'>
-          <h2 className='text-3xl md:text-5xl font-black text-primary'>About <span className='text-secondary'>Silver Studio</span></h2>
+          <h2 className='text-3xl md:text-5xl font-black text-primary'>About <span className='text-secondary'>Desert Stars Choir</span></h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, facilis. Velit provident omnis, a laborum veniam molestias, et quo quisquam qui id esse ea quas ratione ab voluptatibus. Nobis, vel.</p>
           <button className='font-bold text-base bg-secondary hover:bg-primary p-4 duration-500 rounded-md text-white'>GET STARTED</button>
         </motion.div>
