@@ -5,6 +5,7 @@ import Feature from './component/Feature'
 import AboutPage from './component/AboutPage'
 import Banner from './component/Banner'
 import Footer from './component/Footer'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <>
       <Header navItem={navItem} />
       <Home />
+      <FloatingWhatsApp  />
       <Feature />
       <AboutPage/>
       <Banner/>

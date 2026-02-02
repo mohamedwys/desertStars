@@ -42,19 +42,19 @@ function Feature() {
                 {/* Card 1 */}
                 <div className='group px-6 min-h-96 flex flex-col justify-center items-center w-full text-center rounded-xl space-y-10 bg-white border-2 border-transparent shadow-[0px_10px_50px_0px_rgba(26,35,65,0.12)] hover:shadow-[0px_15px_60px_0px_rgba(26,35,65,0.2),0px_0px_30px_0px_rgba(212,175,55,0.2)] hover:border-[#d4af37] hover:-translate-y-4 duration-500 cursor-pointer'>
                     <img className='w-full' src={feature1} alt="feature1" />
-                    <h2 className="text-3xl font-black text-[#1a2341] group-hover:text-[#d4af37] transition-colors duration-300">Desert Stars service 1</h2>
+                    <h2 className="text-3xl font-black bg-gradient-to-r from-[#ffde59] to-[#ff914d] bg-clip-text text-transparent transition-colors duration-300">Desert Stars service 1</h2>
                 </div>
                 
                 {/* Card 2 - Offset */}
                 <div className='group px-6 min-h-96 flex flex-col justify-center items-center w-full text-center rounded-xl space-y-10 bg-white border-2 border-transparent shadow-[0px_10px_50px_0px_rgba(26,35,65,0.12)] hover:shadow-[0px_15px_60px_0px_rgba(26,35,65,0.2),0px_0px_30px_0px_rgba(212,175,55,0.2)] hover:border-[#d4af37] lg:translate-y-16 hover:-translate-y-4 lg:hover:translate-y-12 duration-500 cursor-pointer'>
                     <img className='w-full p-4' src={feature2} alt="feature2" />
-                    <h2 className="text-3xl font-black text-[#1a2341] group-hover:text-[#d4af37] transition-colors duration-300">Desert Stars service 2</h2>
+                    <h2 className="text-3xl font-black bg-gradient-to-r from-[#ffde59] to-[#ff914d] bg-clip-text text-transparent transition-colors duration-300">Desert Stars service 2</h2>
                 </div>
                 
                 {/* Card 3 */}
                 <div className='group px-6 min-h-96 flex flex-col justify-center items-center w-full text-center rounded-xl space-y-10 bg-white border-2 border-transparent shadow-[0px_10px_50px_0px_rgba(26,35,65,0.12)] hover:shadow-[0px_15px_60px_0px_rgba(26,35,65,0.2),0px_0px_30px_0px_rgba(212,175,55,0.2)] hover:border-[#d4af37] hover:-translate-y-4 duration-500 cursor-pointer'>
                     <img className='w-full' src={feature3} alt="feature3" />
-                    <h2 className="text-3xl font-black text-[#1a2341] group-hover:text-[#d4af37] transition-colors duration-300">Desert Stars service 3</h2>
+                    <h2 className="text-3xl font-black bg-gradient-to-r from-[#ffde59] to-[#ff914d] bg-clip-text text-transparent transition-colors duration-300">Desert Stars service 3</h2>
                 </div>
             </motion.div>
         </div>
