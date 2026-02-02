@@ -9,7 +9,7 @@ export default {
       colors: {
         "primary": "#010851",
         "secondary": "#9A7AF1",
-        "Thirdary" : "#BEA6FF",
+        "Thirdary" : "#D4AF37",
         "tartiary": "#707070",
         "pink": "#EE9AE5"
       },

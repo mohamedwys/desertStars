@@ -3,7 +3,6 @@ import Header from './component/Header'
 import Home from './component/Home'
 import Feature from './component/Feature'
 import AboutPage from './component/AboutPage'
-// import Pricing from './component/Pricing'
 import Banner from './component/Banner'
 import Footer from './component/Footer'
 
@@ -22,7 +21,6 @@ function App() {
       <Home />
       <Feature />
       <AboutPage/>
-      {/* <Pricing/> */}
       <Banner/>
       <Footer navItem={navItem}/>
     </>

@@ -145,9 +145,9 @@ function AudioPlayer() {
     return (
         <div className="w-full md:w-1/2 text-white flex justify-center items-center relative">
 
-            <div className="w-40 h-40 blur-sm circle-gradient rounded-full absolute -top-10 -left-10 lg:-top-8 lg:left-12"></div>
-            <div className="w-60 h-60 blur-sm circle-gradient2 rounded-full absolute -bottom-10 -right-10 lg:-bottom-8 lg:right-12"></div>
-            <div className="w-20 h-20 blur-xl bg-[#08e2ff] rounded-full absolute -top-6 -right-4 lg:-top-2 lg:right-28"></div>
+            {/* <div className="w-40 h-40 blur-sm circle-gradient rounded-full absolute -top-10 -left-10 lg:-top-8 lg:left-12"></div> */}
+            {/* <div className="w-60 h-60 blur-sm circle-gradient2 rounded-full absolute -bottom-10 -right-10 lg:-bottom-8 lg:right-12"></div> */}
+            <div className="w-20 h-20 blur-xl bg-[#D4AF37] rounded-full absolute -top-6 -right-4 lg:-top-2 lg:right-28"></div>
             <motion.main
             variants={fadeIn("left",0.2)}
             initial={"hidden"}
@@ -166,7 +166,7 @@ function AudioPlayer() {
 
                 {/* thumbnail */}
                 <div className="w-full py-4 flex justify-center items-center">
-                    <img className={`${isPlaying?"play":"pause-spin"} animate-spin-slow w-40 h-40 lg:w-52 lg:h-52 object-cover border-8 border-white rounded-full`} src={audioData[musicNumber].thumbnail} alt="thumbnail" />
+                    <img className={`${isPlaying?"play":"pause-spin"} animate-spin-slow w-40 h-40 lg:w-52 lg:h-52 object-cover border-8 border-tartiary rounded-full`} src={audioData[musicNumber].thumbnail} alt="thumbnail" />
                 </div>
 
                 {/* details */}

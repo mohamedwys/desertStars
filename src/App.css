@@ -1,33 +1,378 @@
+/* ENHANCED DESERT NIGHT THEME */
+
+/* Main gradient - Deep night sky transitioning to horizon */
 .gradient-bg {
-    background: linear-gradient(99deg, #EE9AE5 0%, #5961F9 100%);
+    position: relative;
+    background: linear-gradient(180deg, 
+        #050816 0%,      /* Deep dark blue at top */
+        #0f1729 30%,     /* Night sky */
+        #1a2341 60%,     /* Lighter midnight */
+        #2d3561 100%     /* Horizon glow */
+    );
+    overflow: hidden;
 }
+
+/* Alternative: More purple-tinted desert night */
+.gradient-bg-alt {
+    position: relative;
+    background: linear-gradient(180deg, 
+        #0a0a1e 0%, 
+        #1a1a3e 40%,
+        #2a2a5e 100%
+    );
+    overflow: hidden;
+}
+
+/* Starfield Container */
+.stars-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.star {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+    animation: twinkle linear infinite;
+}
+
+/* Star size variations */
+.star.small {
+    width: 1px;
+    height: 1px;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.star.medium {
+    width: 2px;
+    height: 2px;
+    box-shadow: 0 0 4px #d4af37, 0 0 6px rgba(212, 175, 55, 0.4);
+}
+
+.star.large {
+    width: 3px;
+    height: 3px;
+    background: #d4af37;
+    box-shadow: 
+        0 0 6px #d4af37, 
+        0 0 12px rgba(212, 175, 55, 0.6),
+        0 0 18px rgba(212, 175, 55, 0.3);
+}
+
+/* Gold accent stars - special bright ones */
+.star.gold {
+    width: 2.5px;
+    height: 2.5px;
+    background: #ffd700;
+    box-shadow: 
+        0 0 8px #ffd700, 
+        0 0 16px rgba(255, 215, 0, 0.5);
+}
+
+/* Twinkling animation */
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
+
+/* Slower twinkle for some variety */
+@keyframes twinkle-slow {
+    0%, 100% {
+        opacity: 0.4;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+/* Shooting stars */
+.shooting-star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #fff, 0 0 12px rgba(255, 255, 255, 0.5);
+    animation: shoot linear infinite;
+    opacity: 0;
+}
+
+@keyframes shoot {
+    0% {
+        opacity: 1;
+        transform: translateX(0) translateY(0) rotate(45deg);
+    }
+    70% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-400px) translateY(400px) rotate(45deg);
+    }
+}
+
+/* Golden shooting star variant */
+.shooting-star.gold {
+    background: #d4af37;
+    box-shadow: 0 0 10px #d4af37, 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Crescent Moon */
+.moon {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffd700, #d4af37 70%, #b8941f);
+    box-shadow: 
+        0 0 20px rgba(255, 215, 0, 0.3),
+        0 0 40px rgba(212, 175, 55, 0.3),
+        0 0 60px rgba(212, 175, 55, 0.2),
+        inset -10px -10px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.85;
+    animation: moon-glow 8s ease-in-out infinite;
+}
+
+@keyframes moon-glow {
+    0%, 100% {
+        box-shadow: 
+            0 0 20px rgba(255, 215, 0, 0.3),
+            0 0 40px rgba(212, 175, 55, 0.3),
+            0 0 60px rgba(212, 175, 55, 0.2),
+            inset -10px -10px 20px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 
+            0 0 30px rgba(255, 215, 0, 0.4),
+            0 0 60px rgba(212, 175, 55, 0.4),
+            0 0 90px rgba(212, 175, 55, 0.3),
+            inset -10px -10px 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Nebula clouds */
+.nebula {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(ellipse 800px 400px at 20% 30%, rgba(106, 90, 205, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse 600px 500px at 80% 70%, rgba(25, 25, 112, 0.12) 0%, transparent 50%),
+        radial-gradient(ellipse 700px 600px at 50% 90%, rgba(72, 61, 139, 0.06) 0%, transparent 60%);
+    animation: nebula-drift 30s ease-in-out infinite alternate;
+}
+
+@keyframes nebula-drift {
+    0% {
+        opacity: 0.3;
+        transform: scale(1) translate(0, 0);
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(1.1) translate(30px, -20px);
+    }
+}
+
+/* Milky Way effect - optional */
+.milky-way {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: 
+        radial-gradient(ellipse 100% 50% at 50% 50%, 
+            rgba(255, 255, 255, 0.03) 0%, 
+            transparent 50%);
+    transform: rotate(-25deg);
+    opacity: 0.6;
+}
+
+/* Distant horizon glow - desert sand reflection */
+.horizon-glow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, 
+        rgba(212, 175, 55, 0.05) 0%,
+        transparent 100%);
+    pointer-events: none;
+}
+
+/* Star constellations - subtle connected stars */
+.constellation {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0.3;
+}
+
+.constellation-line {
+    position: absolute;
+    background: rgba(212, 175, 55, 0.2);
+    height: 1px;
+    transform-origin: left center;
+}
+
+/* Original styles preserved */
 .gradient-btn {
     background: linear-gradient(#ffffff 0%, #cecaca 100%);
 }
+
 .circle-gradient {
-    background: radial-gradient(circle at 35px 65px,#BEA6FF,#9A7AF1 );
+    background: radial-gradient(circle at 35px 65px, #d4af37, #1a2341);
 }
+
 .circle-gradient2 {
-    background: radial-gradient(circle at 45px 95px,#EE9AE5,rgb(92, 101, 201) );
+    background: radial-gradient(circle at 45px 95px, #ffd700, #0a1128);
 }
+
 input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 15px;
     height: 15px;
     border-radius: 100%;
-    border: 2px solid #010851;
+    border: 2px solid #d4af37;
     background-color: white;
-}
-.play{
-    animation-play-state:running !important; 
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
 }
 
-.pause-spin{
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: #ffd700;
+    border-color: #ffd700;
+}
 
+.play {
+    animation-play-state: running !important;
+}
+
+.pause-spin {
     animation-play-state: paused !important;
 }
 
 @keyframes rotate360 {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .moon {
+        width: 50px;
+        height: 50px;
+        top: 5%;
+        right: 5%;
+    }
+    
+    .nebula {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .moon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Performance optimization - reduce animations on low-end devices */
+@media (prefers-reduced-motion: reduce) {
+    .star,
+    .shooting-star,
+    .nebula,
+    .moon {
+        animation: none !important;
+    }
+}
+
+.feature-title {
+    color: #1a2341; /* Deep night blue */
+}
+
+.feature-text {
+    color: #2d3561; /* Lighter midnight blue */
+}
+
+/* Feature cards with desert theme */
+.feature-card {
+    background: white;
+    border: 2px solid transparent;
+    transition: all 0.5s ease;
+}
+
+.feature-card:hover {
+    border-color: #d4af37; /* Gold accent on hover */
+    box-shadow: 
+        0px 10px 50px 0px rgba(26, 35, 65, 0.15),
+        0px 0px 30px 0px rgba(212, 175, 55, 0.2); /* Gold glow on hover */
+}
+
+/* Optional: Add gold accent to card titles on hover */
+.feature-card:hover h2 {
+    color: #d4af37;
+    transition: color 0.3s ease;
+}
+
+/* Alternative card style with subtle gradient */
+.feature-card-alt {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 2px solid #e9ecef;
+}
+
+.feature-card-alt:hover {
+    background: linear-gradient(135deg, #ffffff 0%, #fff9f0 100%);
+    border-color: #d4af37;
+    box-shadow: 
+        0px 15px 60px 0px rgba(26, 35, 65, 0.2),
+        0px 0px 40px 0px rgba(212, 175, 55, 0.25);
+}
+
+/* Card with top gold accent bar */
+.feature-card-accent {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card-accent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #d4af37 0%, #ffd700 100%);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.feature-card-accent:hover::before {
+    transform: scaleX(1);
 }
