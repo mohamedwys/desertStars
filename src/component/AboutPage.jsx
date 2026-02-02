@@ -21,13 +21,15 @@ function AboutPage() {
         whileInView={"show"}
         viewport={{once:false}}
         className='w-full lg:w-1/3 space-y-7'>
-          <h2 className="text-3xl md:text-5xl font-black text-primary">
-            About{" "}
+          <h2 className="text-3xl md:text-5xl font-black text-black">
+            Why Join{" "}
             <span className="bg-gradient-to-r from-[#ffde59] to-[#ff914d] bg-clip-text text-transparent">
               Desert Stars Choir
             </span>
           </h2>          
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, facilis. Velit provident omnis, a laborum veniam molestias, et quo quisquam qui id esse ea quas ratione ab voluptatibus. Nobis, vel.</p>
+            <p>Express Yourself: Explore your voice and enjoy singing.</p>
+            <p>Make Friends: Work together in a friendly, team-oriented environment.</p>
+            <p>Build Confidence: Enjoy performing in a supportive setting.</p>
           <button className='font-bold text-base bg-gradient-to-r from-[#ffde59] to-[#ff914d] hover:bg-primary p-4 duration-500 rounded-md text-primary'>BOOK NOW</button>
         </motion.div>
       </div>

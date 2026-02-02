@@ -16,7 +16,7 @@ function Feature() {
                     initial={"hidden"}
                     whileInView={"show"}
                     viewport={{ once: false }}
-                    className="text-3xl md:text-5xl font-black text-[#1a2341]"
+                    className="text-3xl md:text-5xl font-black text-[#000000]"
                 >
                     <span className="bg-gradient-to-r from-[#ffde59] to-[#ff914d] bg-clip-text text-transparent">Children Choir </span>
                     Desert Stars
@@ -29,8 +29,8 @@ function Feature() {
                     viewport={{ once: false }}
                     className="text-[#2d3561] leading-relaxed"
                 >
-                    The Desert Star Children’s Choir is a recreational program for children aged from 7 to 14, designed to inspire a love of music. Sessions develop vocal skills and musical awareness in a supportive environment. Groups meet <strong>Monday Desert Moon</strong> and <strong>Wednesday Desert Wind</strong>, with activities concluding in informal performances.
-                </motion.p>
+                    <p>The Desert Stars Children’s Choir is a fun, community music activity for children aged 7–14. Our sessions focus on enjoying singing, exploring music, and making new friends in a relaxed, supportive environment.</p>
+                    <p>Children meet twice a week Monday’s Desert Moon and Wednesday’s Desert Wind—and finish with informal performances to celebrate their progress.</p>                </motion.p>
                 </div>
     
             {/* Feature Cards Grid */}

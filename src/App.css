@@ -5,8 +5,8 @@
     position: relative;
     background: linear-gradient(180deg, 
         #050816 0%,      /* Deep dark blue at top */
-        #0f1729 30%,     /* Night sky */
-        #1a2341 60%,     /* Lighter midnight */
+        #000000 30%,     /* Night sky */
+        #000000 80%,     /* Lighter midnight */
         #2d3561 100%     /* Horizon glow */
     );
     overflow: hidden;

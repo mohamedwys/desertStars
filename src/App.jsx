@@ -5,6 +5,7 @@ import Feature from './component/Feature'
 import AboutPage from './component/AboutPage'
 import Banner from './component/Banner'
 import Footer from './component/Footer'
+import LocationSection from './component/Locationsection'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { HoverEffect } from "./component/ui/card-hover-effect";
 
@@ -13,47 +14,32 @@ function App() {
   const projects = [
   {
     title: "Oasis Chapter (5 weeks)",
-    description: "An introductory musical program designed for young singers.",
+    description: "A relaxed introduction for young singers to enjoy music and group singing.",
     link: "#",
   },
   {
-    title: "Program Overview",
-    description: "Discover the fundamentals of choral singing in a structured, engaging environment.",
+    title: "Fun Sessions",
+    description: "Guided by experienced leaders, sessions are playful and engaging.",
     link: "#",
   },
   {
-    title: "Learning Outcomes",
-    description: "Build confidence, teamwork, and musical skills through guided sessions.",
-    link: "#",
-  },
-  {
-    title: "Performance",
-    description: "Concludes with an informal mini-performance for families to showcase progress.",
+    title: "Mini Performances",
+    description: "Share songs with family and friends in a casual showcase.",
     link: "#",
   },
   {
     title: "Taster Session",
-    description: "AED 250 · 1.5 hours. Fee is deducted if the participant continues with the full program.",
+    description: "AED 250 · 1.5 hours. Fee is deducted if you join the full experience.",
     link: "#",
   },
   {
-    title: "Full Program",
+    title: "Full Experience",
     description: "Remaining 4 sessions: AED 1,000, scheduled weekly.",
     link: "#",
   },
   {
     title: "Future Chapters",
     description: "After the spring holiday, the choir continues with advanced chapters, building towards a formal concert for families.",
-    link: "#",
-  },
-  {
-    title: "Schedule & Location",
-    description: "AN Events, Kojak Building, Motor City. Mondays & Wednesdays · 16:30–18:00. Limited spaces; two groups only.",
-    link: "#",
-  },
-  {
-    title: "Program Nature",
-    description: "Community-based, recreational, designed purely for the development of singing skills and enjoyment of music.",
     link: "#",
   },
 ];
@@ -79,6 +65,7 @@ function App() {
       <div className="max-w-7xl mx-auto px-8">
       <HoverEffect items={projects} />
       </div>
+      <LocationSection />
       <AboutPage/>
       <Banner/>
       <Footer navItem={navItem}/>

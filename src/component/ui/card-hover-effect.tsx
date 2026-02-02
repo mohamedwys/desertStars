@@ -69,7 +69,7 @@ export const Card = ({
         className={cn(
             `
             rounded-2xl h-full w-full p-4 overflow-hidden
-            bg-[#0b1d33]/95
+            bg-[#000000]/95
             border border-transparent
             group-hover:border-[#ff914d]/90
             relative z-20
