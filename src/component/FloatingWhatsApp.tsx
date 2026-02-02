@@ -81,7 +81,7 @@ export function FloatingWhatsApp({
   onNotification,
   onLoopDone,
 
-  phoneNumber = '1234567890',
+  phoneNumber = '971554307037',
   accountName = 'Account Name',
   avatar = dummyAvatar,
   statusMessage = 'Typically replies within 1 hour',

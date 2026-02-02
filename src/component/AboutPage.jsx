@@ -28,7 +28,7 @@ function AboutPage() {
             </span>
           </h2>          
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, facilis. Velit provident omnis, a laborum veniam molestias, et quo quisquam qui id esse ea quas ratione ab voluptatibus. Nobis, vel.</p>
-          <button className='font-bold text-base bg-secondary hover:bg-primary p-4 duration-500 rounded-md text-white'>GET STARTED</button>
+          <button className='font-bold text-base bg-gradient-to-r from-[#ffde59] to-[#ff914d] hover:bg-primary p-4 duration-500 rounded-md text-primary'>BOOK NOW</button>
         </motion.div>
       </div>
     </section>
