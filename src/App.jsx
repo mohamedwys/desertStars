@@ -69,7 +69,12 @@ function App() {
     <>
       <Header navItem={navItem} />
       <Home />
-      <FloatingWhatsApp  />
+      <FloatingWhatsApp phoneNumber="971554307037"
+        accountName="Desert Stars Choir"
+        chatMessage="Hello! How can we help you today? 😊"
+        darkMode={false}
+        notification={true}
+        notificationSound={true} />
       <Feature />
       <div className="max-w-7xl mx-auto px-8">
       <HoverEffect items={projects} />
