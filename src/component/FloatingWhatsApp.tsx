@@ -179,7 +179,9 @@ export function FloatingWhatsApp({
     event.preventDefault()
     if (!inputRef.current?.value) return
 
-    window.open(`https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${inputRef.current.value}`)
+    const encodedMessage = encodeURIComponent(inputRef.current.value);
+    window.open(`https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${encodedMessage}`);
+
     if (onSubmit) onSubmit(event, inputRef.current.value)
     inputRef.current.value = ''
   }
