@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { MapPin, Clock, Phone, Mail } from 'lucide-react';
 
 interface LocationSectionProps {
@@ -10,72 +10,8 @@ const LocationSection: React.FC<LocationSectionProps> = ({
   latitude = 25.0457108, 
   longitude = 55.2339266 
 }) => {
-  const mapRef = useRef<HTMLDivElement>(null);
-  const mapInstanceRef = useRef<google.maps.Map | null>(null);
-
-  useEffect(() => {
-    // Check if script already exists
-    const existingScript = document.querySelector('script[src*="mapsJavaScriptAPI"]');
-    
-    if (existingScript) {
-      // Script already loaded, initialize map
-      if (window.google && window.google.maps) {
-        initMap();
-      } else {
-        // Wait for it to load
-        existingScript.addEventListener('load', initMap);
-      }
-      return;
-    }
-
-    // Load the keyless Google Maps API script
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/gh/somanchiu/Keyless-Google-Maps-API@v7.1/mapsJavaScriptAPI.js';
-    script.async = true;
-    script.defer = true;
-    
-    script.onload = () => {
-      // Wait a bit for google.maps to be fully available
-      setTimeout(() => {
-        if (window.google && window.google.maps) {
-          initMap();
-        }
-      }, 100);
-    };
-    
-    document.head.appendChild(script);
-  }, [latitude, longitude]);
-
-  const initMap = () => {
-    if (!mapRef.current || !window.google || !window.google.maps) {
-      console.error('Map container or Google Maps API not available');
-      return;
-    }
-
-    try {
-      const mapOptions: google.maps.MapOptions = {
-        center: { lat: latitude, lng: longitude },
-        zoom: 15,
-        zoomControl: true,
-        streetViewControl: false,
-        fullscreenControl: false,
-        mapTypeControl: false,
-      };
-
-      const map = new google.maps.Map(mapRef.current, mapOptions);
-      mapInstanceRef.current = map;
-
-      // Add custom marker
-      new google.maps.Marker({
-        position: { lat: latitude, lng: longitude },
-        map: map,
-        title: "Our Location",
-        animation: google.maps.Animation.DROP,
-      });
-    } catch (error) {
-      console.error('Error initializing map:', error);
-    }
-  };
+  // Generate Google Maps embed URL
+  const mapEmbedUrl = `https://maps.google.com/maps?q=${latitude},${longitude}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   return (
     <section className="bg-white py-20 px-4">
@@ -164,16 +100,32 @@ const LocationSection: React.FC<LocationSectionProps> = ({
                 </div>
               </div>
             </div>
+
+            {/* CTA Button */}
+            <button 
+              onClick={() => window.open(`https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`, '_blank')}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            >
+              Get Directions
+            </button>
           </div>
 
           {/* Right Side - Map */}
           <div className="lg:sticky lg:top-8">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div 
-                ref={mapRef} 
-                className="w-full h-[600px]"
-                style={{ minHeight: '600px' }}
-              />
+              <div className="w-full h-[600px] relative">
+                <iframe
+                  src={mapEmbedUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Location Map"
+                  className="absolute inset-0"
+                />
+              </div>
             </div>
           </div>
         </div>
