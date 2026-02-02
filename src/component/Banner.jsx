@@ -11,7 +11,7 @@ function Banner() {
             initial={"hidden"}
             whileInView={"show"}
             viewport={{once:false,amount:0.7}}
-            className="text-3xl lg:text-5xl text-sky-200 font-black leading-[3rem] lg:leading-[5rem]">UAE CHILDREN CHOIR BY DESERT STARS</motion.h1>
+            className="text-3xl lg:text-5xl text-sky-200 font-black leading-[3rem] lg:leading-[5rem]">Desert Stars Children Choir DXB</motion.h1>
             <div className="flex flex-col md:flex-row-reverse items-center">
                 <motion.div
                 variants={fadeIn("left",0.2)}
