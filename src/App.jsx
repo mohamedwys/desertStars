@@ -14,7 +14,7 @@ function App() {
 
   const projects = [
   {
-    title: "Oasis Chapter (5 weeks)",
+    title: "Oasis Chapter (4 weeks)",
     description: "A relaxed introduction for young singers to enjoy music and group singing.",
     link: "#",
   },

@@ -16,7 +16,7 @@ function Header({ navItem }) {
                 <div className='flex gap-4 lg:gap-8 items-center'>
                     <a href='/' id="logo" className='flex items-center gap-4' >
                         <img src={logo} alt="logo" className='w-12 h-12' />
-                        <h1 className=' text-3xl font-black '>DESERT STARS</h1>
+                        <h1 className=' text-2xl font-black '>Desert Stars Children Choir DXB</h1>
                     </a>
                     <nav>
                         <ul className='md:flex hidden gap-4 lg:gap-8 font-medium'>

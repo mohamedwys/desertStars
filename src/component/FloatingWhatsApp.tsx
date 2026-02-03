@@ -5,7 +5,7 @@ import css from '../styles.module.css'
 
 import darkBG from '../assets/bg-chat-tile-light.png'
 import lightBG from '../assets/bg-chat-tile-dark.png'
-import dummyAvatar from '../assets/uifaces-avatar.png'
+import dummyAvatar from '../assets/avatar.png'
 import SoundBeep from '../assets/whatsapp-notification.mp3'
 
 export interface FloatingWhatsAppProps {
