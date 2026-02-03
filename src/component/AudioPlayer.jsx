@@ -166,7 +166,7 @@ function AudioPlayer() {
 
                 {/* thumbnail */}
                 <div className="w-full py-4 flex justify-center items-center">
-                    <img className={`${isPlaying?"play":"pause-spin"} animate-spin-slow w-40 h-40 lg:w-52 lg:h-52 object-cover border-8 border-tartiary rounded-full`} src={audioData[musicNumber].thumbnail} alt="thumbnail" />
+                    <img className={`${isPlaying?"play":"pause-spin"} animate-spin-slow w-40 h-40 lg:w-52 lg:h-52 object-cover border-8 border-Thirdary rounded-full`} src={audioData[musicNumber].thumbnail} alt="thumbnail" />
                 </div>
 
                 {/* details */}
