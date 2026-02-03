@@ -100,14 +100,6 @@ const LocationSection: React.FC<LocationSectionProps> = ({
                 </div>
               </div>
             </div>
-
-            {/* CTA Button */}
-            <button 
-              onClick={() => window.open(`https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`, '_blank')}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-            >
-              Get Directions
-            </button>
           </div>
 
           {/* Right Side - Map */}
