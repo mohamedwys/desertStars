@@ -9,7 +9,7 @@ import LocationSection from './component/Locationsection'
 import BookingSection from './component/Bookingsection';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { HoverEffect } from "./component/ui/card-hover-effect";
-import avatarImage from '../assets/avatar.png'
+import dummyAvatar from './assets/avatar.png'
 
 
 function App() {
@@ -62,7 +62,7 @@ function App() {
         phoneNumber="971554307037"
         accountName="Desert Stars Choir"
         chatMessage="Hello! How can we help you today? 😊"
-        avatar={avatarImage}  
+        avatar={dummyAvatar}  
         darkMode={false}
         notification={true}
         notificationSound={true} 
