@@ -6,6 +6,7 @@ import AboutPage from './component/AboutPage'
 import Banner from './component/Banner'
 import Footer from './component/Footer'
 import LocationSection from './component/Locationsection'
+import BookingSection from './component/Bookingsection';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { HoverEffect } from "./component/ui/card-hover-effect";
 
@@ -65,8 +66,9 @@ function App() {
       <div className="max-w-7xl mx-auto px-8">
       <HoverEffect items={projects} />
       </div>
-      <LocationSection />
       <AboutPage/>
+      <LocationSection />
+      <BookingSection />
       <Banner/>
       <Footer navItem={navItem}/>
     </>
