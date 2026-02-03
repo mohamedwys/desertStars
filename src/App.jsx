@@ -9,7 +9,7 @@ import LocationSection from './component/Locationsection'
 import BookingSection from './component/Bookingsection';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { HoverEffect } from "./component/ui/card-hover-effect";
-import avatarImage from './path/to/avatar.png'
+import avatarImage from '../assets/avatar.png'
 
 
 function App() {
