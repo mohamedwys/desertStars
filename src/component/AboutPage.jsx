@@ -30,7 +30,7 @@ function AboutPage() {
             <p>Express Yourself: Explore your voice and enjoy singing.</p>
             <p>Make Friends: Work together in a friendly, team-oriented environment.</p>
             <p>Build Confidence: Enjoy performing in a supportive setting.</p>
-          <button className='font-bold text-base bg-gradient-to-r from-[#ffde59] to-[#ff914d] hover:bg-primary p-4 duration-500 rounded-md text-primary'>BOOK NOW</button>
+          <button onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })} className='font-bold text-base bg-gradient-to-r from-[#ffde59] to-[#ff914d] hover:bg-primary p-4 duration-500 rounded-md text-primary'>BOOK NOW</button>
         </motion.div>
       </div>
     </section>

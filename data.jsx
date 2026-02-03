@@ -4,80 +4,6 @@ import LazyDay from './src/assets/audio/Lazy Day.mp3'
 import RiverBlues from './src/assets/audio/River Blues.mp3'
 import SkyMap from './src/assets/audio/Sky Map.mp3'
 
-const pricingInfo = [
-    {
-        name: "Start",
-        year: "199$",
-        month: "19$",
-        description: "Perfect for freelance, wedding video, creators and podcasters.",
-        service: [ 
-            {   title:"Website",
-                status: true
-            },
-            {   title:"Podcast",
-                status: true
-            },
-            {   title:"Social accounts up to 1M followers",
-                status: false
-            },
-            {   title:"Cinema / Film Festival",
-                status: false
-            },
-            {   title:"Video Game",
-                status: false
-            },
-            
-        ]
-    },
-    {
-        name: "Advance",
-        year: "399$",
-        month: "39$",
-        description: "Perfect for production companies, agencies, brands, and non-profits.",
-        service: [ 
-            {   title:"Website",
-                status: true
-            },
-            {   title:"Podcast",
-                status: true
-            },
-            {   title:"Social accounts up to 1M followers",
-                status: true
-            },
-            {   title:"Cinema / Film Festival",
-                status: false
-            },
-            {   title:"Video Game",
-                status: false
-            },
-            
-        ]
-    },
-    { 
-        name: "Premium",
-        year: "599$",
-        month: "59$",
-        description: "Perfect for large brands or projects that need extended coverage.",
-        service: [ 
-            {   title:"Website",
-                status: true
-            },
-            {   title:"Podcast",
-                status: true
-            },
-            {   title:"Social accounts up to 1M followers",
-                status: true
-            },
-            {   title:"Cinema / Film Festival",
-                status: true
-            },
-            {   title:"Video Game",
-                status: true
-            },
-            
-        ]
-    }
-]
 
 const audioData = [
     
@@ -119,4 +45,4 @@ const audioData = [
     
   ]
 
-export { pricingInfo,audioData };
+export { audioData };

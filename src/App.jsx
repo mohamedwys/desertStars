@@ -49,7 +49,7 @@ function App() {
     {link : "Overview", path : "home"},
     {link : "Feature", path : "feature"},
     {link : "About", path : "about"},
-    // {link : "Pricing", path : "pricing"}
+    {link : "Book Now", path : "booking"}
 ]
 
   return (

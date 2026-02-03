@@ -21,7 +21,7 @@ function Header({ navItem }) {
                     <nav>
                         <ul className='md:flex hidden gap-4 lg:gap-8 font-medium'>
                             {navItem.map(({link,path},index) => {
-                                return <Link key={link + index} to={path} className='hover:text-secondary duration-500 cursor-pointer' offset={-100} >{link}</Link>
+                                return <Link key={link + index} to={path} className='hover:text-Thirdary duration-500 cursor-pointer' offset={-100} >{link}</Link>
                             })}              
                         </ul>
                     </nav>
