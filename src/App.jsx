@@ -9,6 +9,8 @@ import LocationSection from './component/Locationsection'
 import BookingSection from './component/Bookingsection';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { HoverEffect } from "./component/ui/card-hover-effect";
+import avatarImage from './path/to/avatar.png'
+
 
 function App() {
 
@@ -56,12 +58,15 @@ function App() {
     <>
       <Header navItem={navItem} />
       <Home />
-      <FloatingWhatsApp phoneNumber="971554307037"
+      <FloatingWhatsApp 
+        phoneNumber="971554307037"
         accountName="Desert Stars Choir"
         chatMessage="Hello! How can we help you today? 😊"
+        avatar={avatarImage}  
         darkMode={false}
         notification={true}
-        notificationSound={true} />
+        notificationSound={true} 
+      />
       <Feature />
       <div className="max-w-7xl mx-auto px-8">
       <HoverEffect items={projects} />
