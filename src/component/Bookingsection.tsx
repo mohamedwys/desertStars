@@ -17,7 +17,7 @@ const BookingSection: React.FC = () => {
   }, []);
 
   return (
-    <section id="booking" className="bg-gradient-to-br from-gray-50 to-gray-100 py-20 px-4">
+    <section id="booking" className="bg-white py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
