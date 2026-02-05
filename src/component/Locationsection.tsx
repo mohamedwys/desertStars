@@ -112,8 +112,8 @@ const LocationSection: React.FC<LocationSectionProps> = ({
                   </div>
                   <div>
                     <p className="text-sm text-light mb-1 font-semibold">Email</p>
-                    <a href="mailto:contact@desertstarsdxb.ae" className="text-dark font-bold hover:text-secondary transition-colors text-lg break-all">
-                      contact@desertstarsdxb.ae
+                    <a href="mailto:andrea@desertstarsdxb.ae" className="text-dark font-bold hover:text-secondary transition-colors text-lg break-all">
+                      andrea@desertstarsdxb.ae
                     </a>
                   </div>
                 </div>
