@@ -11,11 +11,9 @@ function AboutPage() {
         initial={"hidden"}
         whileInView={"show"}
         viewport={{once:false}}
-        className='group relative w-full lg:w-1/2 flex items-center justify-center py-12'>
-          <div className='relative'>
-            <img className='w-full max-w-md lg:max-w-lg shadow-[0px_20px_60px_0px_rgba(0,0,0,0.25)] rounded-lg' src={discCover} alt="Desert Stars Choir Album Cover" />
-            <img className='w-11/12 absolute -z-10 left-1/4 top-1/4 group-hover:translate-x-8 lg:group-hover:translate-x-16 group-hover:rotate-45 duration-700 opacity-80' src={disc} alt="Spinning vinyl disc" />
-          </div>
+        className='group relative w-full py-16 lg:w-1/2 flex items-center cursor-pointer'>
+          <img className='w-8/12 lg:w-10/12 shadow-[0px_20px_60px_0px_rgba(0,0,0,0.25)] rounded-lg' src={discCover} alt="Desert Stars Choir Album Cover" />
+          <img className='w-7/12 lg:w-9/12 absolute -z-10 left-1/4 lg:left-1/3 group-hover:translate-x-6 lg:group-hover:translate-x-16 duration-700' src={disc} alt="Spinning vinyl disc" />
         </motion.div>
         <motion.div
         variants={fadeIn("left",0.2)}
