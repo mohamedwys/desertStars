@@ -27,7 +27,7 @@ function Banner() {
                 whileInView={"show"}
                 viewport={{once:false,amount:0.7}}
                 className="w-full md:w-2/3 text-white md:pr-4 mt-12 md:mt-10 lg:mt-0 flex flex-col gap-8">
-                    <p className="lg:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium explicabo natus adipisci tempore itaque dolorum, temporibus corporis. Itaque maiores, iusto, nihil perspiciatis nulla aliquam.</p>
+                    <p className="lg:text-2xl">A joyful and inclusive choir where children discover their voices, build confidence, and make lasting friendships through the love of singing.</p>
                     <div className="text-xs flex gap-4">
                         {/* <button className="p-4 bg-Thirdary rounded-md font-bold hover:bg-primary duration-500">DOWLOAD NOW</button> */}
                     </div>

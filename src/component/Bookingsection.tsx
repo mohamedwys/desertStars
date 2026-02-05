@@ -58,7 +58,7 @@ const BookingSection: React.FC = () => {
                   <div>
                     <p className="font-semibold text-gray-900">Session Details</p>
                     <p className="text-gray-500 text-sm">
-                      Sessions run from 4:30 PM to 6:00 PM on Mondays and Wednesdays.
+                      Sessions run from 4:30 PM to 6:00 PM on Mondays or Wednesdays.
                     </p>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ const BookingSection: React.FC = () => {
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <span className="text-blue-600 font-bold mt-0.5">•</span>
-                  <span className="text-gray-600">Limited spaces available — book early to secure your spot.</span>
+                  <span className="text-gray-600">Limited spaces available book early to secure your spot.</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-blue-600 font-bold mt-0.5">•</span>

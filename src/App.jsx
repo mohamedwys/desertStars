@@ -11,7 +11,6 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { HoverEffect } from "./component/ui/card-hover-effect";
 import dummyAvatar from './assets/avatar.png'
 
-
 function App() {
 
   const projects = [
@@ -59,22 +58,22 @@ function App() {
       <Header navItem={navItem} />
       <Home />
       <FloatingWhatsApp 
-        phoneNumber="971554307037"
-        accountName="Desert Stars Choir"
-        chatMessage="Hello! How can we help you today? 😊"
-        avatar={dummyAvatar}  
-        darkMode={false}
-        notification={true}
-        notificationSound={true} 
+        phoneNumber="971554307037" 
+        accountName="Desert Stars Choir" 
+        chatMessage="Hello! How can we help you today? 😊" 
+        avatar={dummyAvatar}   
+        darkMode={false} 
+        notification={true} 
+        notificationSound={true}  
       />
-      <Feature />
+      <Feature /> 
       <div className="max-w-7xl mx-auto px-8">
-      <HoverEffect items={projects} />
+      <HoverEffect items={projects} /> 
       </div>
-      <AboutPage/>
-      <LocationSection />
-      <BookingSection />
-      <Banner/>
+      <AboutPage/> 
+      <LocationSection /> 
+      <BookingSection /> 
+      <Banner/> 
       <Footer navItem={navItem}/>
     </>
 

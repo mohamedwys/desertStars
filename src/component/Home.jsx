@@ -145,7 +145,7 @@ function Home() {
             whileInView="show"
             viewport={{ once: false, amount: 0.7 }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatum suscipit aut sequi at, reiciendis repellendus, natus.
+            Where young voices come together to sing, grow in confidence, and share the joy of music in a supportive and welcoming community.
           </motion.p>
           
           <motion.div

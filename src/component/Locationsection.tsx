@@ -16,16 +16,6 @@ const LocationSection: React.FC<LocationSectionProps> = ({
   return (
     <section className="bg-white py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Visit Us
-          </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            We'd love to see you. Drop by during our business hours or reach out to us anytime, limited spaces available across two groups only.
-            </p>
-        </div>
-
         {/* Main Content */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Side - Information */}
@@ -41,8 +31,9 @@ const LocationSection: React.FC<LocationSectionProps> = ({
                     Our Address
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    AN Events, Kojak Building<br />
-                    Motor City<br />
+                    Kojak Building, Business<br />
+                    Turin Boulevard Road, Al Hebiah 1<br />
+                    Motor City 6/4<br />
                     Dubai, United Arab Emirates
                     </p>
                 </div>
@@ -93,8 +84,8 @@ const LocationSection: React.FC<LocationSectionProps> = ({
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 mb-1">Email</p>
-                    <a href="mailto:hello@company.com" className="text-gray-900 font-semibold hover:text-blue-600 transition-colors">
-                      hello@company.com
+                    <a href="mailto:contact@desertstarsdxb.ae" className="text-gray-900 font-semibold hover:text-blue-600 transition-colors">
+                      contact@desertstarsdxb.ae
                     </a>
                   </div>
                 </div>

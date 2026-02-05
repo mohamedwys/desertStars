@@ -42,9 +42,11 @@ function Footer({navItem}) {
                 <div className='md:w-1/2 lg:w-[20%]' >
                     <h4 className='text-xl font-bold mt-5'>Contact</h4>
                     <div className='space-y-3 mt-8'>
-                        <p>(+971)885432123</p>
-                        <p>Desert Stars</p>
+                        <p>(+971)55 430 7037</p>
+                        <p>Desert Stars Choir DXB</p>
+                        <p>Kojak Building, Motor City</p>
                         <p>Dubai, UAE</p>
+
                     </div>
                 </div>
             </div>
