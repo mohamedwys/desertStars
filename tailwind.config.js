@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         // New cohesive palette - child-friendly but professional
-        "primary": "#1E40AF", // Deep blue - trust, professionalism
+        "primary": "#0B192C", // Deep blue - trust, professionalism
         "secondary": "#F59E0B", // Amber gold - joy, achievement, warmth
         "accent": "#FF914D", // Coral - energy, creativity
         "tertiary": "#D4AF37", // Classic gold - premium feel
