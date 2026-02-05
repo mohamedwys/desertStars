@@ -68,17 +68,19 @@ export const Card = ({
         <div
         className={cn(
             `
-            rounded-2xl h-full w-full p-4 overflow-hidden
-            bg-[#000000]/95
-            border border-transparent
-            group-hover:border-[#ff914d]/90
+            rounded-2xl h-full w-full p-6 overflow-hidden
+            bg-gradient-to-br from-primary to-primary/90
+            border-2 border-primary/20
+            group-hover:border-secondary/60
+            group-hover:shadow-xl
             relative z-20
+            transition-all duration-500
             `,
             className
         )}
         >
         <div className="relative z-50">
-            <div className="p-4">{children}</div>
+            <div className="p-2">{children}</div>
         </div>
         </div>
     )
@@ -97,9 +99,10 @@ export const CardTitle = ({
     <h4
       className={cn(
         `
-        font-bold tracking-wide mt-4
-        bg-gradient-to-r from-[#ffde59] to-[#ff914d]
+        font-bold tracking-wide mt-4 text-xl
+        bg-gradient-to-r from-secondary via-accent to-tertiary
         bg-clip-text text-transparent
+        group-hover:scale-105 transition-transform duration-300
         `,
         className
       )}
@@ -122,8 +125,9 @@ export const CardDescription = ({
     <p
       className={cn(
         `
-        mt-8 tracking-wide leading-relaxed text-sm
-        text-neutral-300
+        mt-6 tracking-wide leading-relaxed text-base
+        text-white/90
+        group-hover:text-white transition-colors duration-300
         `,
         className
       )}

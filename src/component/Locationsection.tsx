@@ -16,48 +16,75 @@ const LocationSection: React.FC<LocationSectionProps> = ({
   return (
     <section className="bg-white py-20 px-4">
       <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <span className="px-4 py-2 bg-secondary/10 text-secondary font-bold text-sm rounded-full inline-block mb-4">
+            Visit Us
+          </span>
+          <h2 className="text-4xl md:text-5xl font-black text-primary mb-4">
+            Find Us in{' '}
+            <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+              Motor City, Dubai
+            </span>
+          </h2>
+          <p className="text-light text-lg max-w-3xl mx-auto leading-relaxed">
+            Convenient location with easy access. Come visit us or get in touch to learn more.
+          </p>
+        </div>
+
         {/* Main Content */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Side - Information */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             {/* Address Card */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white rounded-2xl shadow-lg border-2 border-cream-dark p-8 hover:shadow-xl hover:border-secondary/30 transition-all duration-300">
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 p-3 rounded-lg flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-blue-600" />
+                <div className="bg-gradient-to-br from-secondary/20 to-accent/20 p-4 rounded-xl flex-shrink-0">
+                  <MapPin className="w-7 h-7 text-secondary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-black text-primary mb-3">
                     Our Address
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-light leading-relaxed text-base">
                     Kojak Building, Business<br />
                     Turin Boulevard Road, Al Hebiah 1<br />
                     Motor City 6/4<br />
                     Dubai, United Arab Emirates
                     </p>
+                  <a
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-4 text-secondary font-bold hover:text-accent transition-colors"
+                  >
+                    <span>Get Directions</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
             {/* Business Hours Card */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white rounded-2xl shadow-lg border-2 border-cream-dark p-8 hover:shadow-xl hover:border-secondary/30 transition-all duration-300">
               <div className="flex items-start space-x-4">
-                <div className="bg-green-100 p-3 rounded-lg flex-shrink-0">
-                  <Clock className="w-6 h-6 text-green-600" />
+                <div className="bg-gradient-to-br from-secondary/20 to-accent/20 p-4 rounded-xl flex-shrink-0">
+                  <Clock className="w-7 h-7 text-secondary" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    Business Hours
+                  <h3 className="text-2xl font-black text-primary mb-4">
+                    Session Times
                   </h3>
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                      <span className="text-gray-600 font-medium">Monday</span>
-                      <span className="text-gray-900 font-semibold">4:30 PM - 6:00 PM</span>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center py-3 border-b border-cream-dark">
+                      <span className="text-light font-semibold">Monday (Desert Moon)</span>
+                      <span className="text-dark font-bold">4:30 - 6:00 PM</span>
                     </div>
-                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                      <span className="text-gray-600 font-medium">Wednesdays</span>
-                      <span className="text-gray-900 font-semibold">4:30 PM - 6:00 PM</span>
+                    <div className="flex justify-between items-center py-3 border-b border-cream-dark">
+                      <span className="text-light font-semibold">Wednesday (Desert Wind)</span>
+                      <span className="text-dark font-bold">4:30 - 6:00 PM</span>
                     </div>
                   </div>
                 </div>
@@ -65,26 +92,27 @@ const LocationSection: React.FC<LocationSectionProps> = ({
             </div>
 
             {/* Contact Info Card */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-              <div className="space-y-4">
+            <div className="bg-white rounded-2xl shadow-lg border-2 border-cream-dark p-8 hover:shadow-xl hover:border-secondary/30 transition-all duration-300">
+              <h3 className="text-2xl font-black text-primary mb-6">Get In Touch</h3>
+              <div className="space-y-5">
                 <div className="flex items-center space-x-4">
-                  <div className="bg-purple-100 p-3 rounded-lg">
-                    <Phone className="w-6 h-6 text-purple-600" />
+                  <div className="bg-gradient-to-br from-secondary/20 to-accent/20 p-3 rounded-xl">
+                    <Phone className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 mb-1">Phone</p>
-                    <a href="tel:+971554307037" className="text-gray-900 font-semibold hover:text-blue-600 transition-colors">
+                    <p className="text-sm text-light mb-1 font-semibold">Phone</p>
+                    <a href="tel:+971554307037" className="text-dark font-bold hover:text-secondary transition-colors text-lg">
                       +971 55 430 7037
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <div className="bg-orange-100 p-3 rounded-lg">
-                    <Mail className="w-6 h-6 text-orange-600" />
+                  <div className="bg-gradient-to-br from-secondary/20 to-accent/20 p-3 rounded-xl">
+                    <Mail className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 mb-1">Email</p>
-                    <a href="mailto:contact@desertstarsdxb.ae" className="text-gray-900 font-semibold hover:text-blue-600 transition-colors">
+                    <p className="text-sm text-light mb-1 font-semibold">Email</p>
+                    <a href="mailto:contact@desertstarsdxb.ae" className="text-dark font-bold hover:text-secondary transition-colors text-lg break-all">
                       contact@desertstarsdxb.ae
                     </a>
                   </div>
@@ -95,8 +123,11 @@ const LocationSection: React.FC<LocationSectionProps> = ({
 
           {/* Right Side - Map */}
           <div className="lg:sticky lg:top-8">
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="w-full h-[600px] relative">
+            <div className="bg-white rounded-2xl shadow-xl border-2 border-cream-dark overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <div className="bg-gradient-to-r from-secondary to-accent p-4 text-white text-center">
+                <p className="font-bold text-lg">📍 We're Here</p>
+              </div>
+              <div className="w-full h-[550px] relative">
                 <iframe
                   src={mapEmbedUrl}
                   width="100%"
@@ -105,7 +136,7 @@ const LocationSection: React.FC<LocationSectionProps> = ({
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Location Map"
+                  title="Desert Stars Choir Location - Motor City, Dubai"
                   className="absolute inset-0"
                 />
               </div>
